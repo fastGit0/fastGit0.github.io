@@ -1,0 +1,119 @@
+/*
+    Comments
+    element {
+        attribute: value;
+        attribute: value;
+        attribute: value;
+        attribute: value;
+        attribute: value;
+        attribute: value;
+    }
+*/
+
+h1 {
+    color: red;
+}
+
+p {
+    font-size: 20px;
+}
+
+/*
+    # -> ID
+    . -> Class
+*/
+
+.custom-para {
+    font-size: 12px;
+    color: blue;
+}
+
+.custom-para {
+    font-size: 12px;
+    color: blue;
+}
+
+.extra {
+    font-weight: bold;
+    background-color: grey;
+}
+/*
+    Margin -> Free space AFTER Element
+*/    
+
+div {
+    background-color: grey;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    /* Width type color */
+    border: 5px solid green;
+    height: 100px;
+    width: 150px;
+    overflow: hidden;
+    overflow: hidden;
+    text-align: center;
+    align-content: center;
+}
+
+/* , -> Add another element*/
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.divstatic, .divrelat {
+    top: 100px;
+    left: 50px;
+}
+
+.divstatic{
+    position: static;
+}
+
+.divrelat {
+    position: relative;
+    z-index: 1;
+}
+
+.divindex {
+    position: relative;
+}
+
+.divfixed {
+    position: fixed;
+    bottom: 250px;
+    right: 80px;
+}
+
+.divstick {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+
+.header {
+    height: 300px;
+    width: 100%;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    background-image: url(../Lesson2/pexels-suzyhazelwood-1629236.jpg);    
+    background-position: center;
+    background-size: cover;
+}
+
+.headerPara {
+    position: relative;
+    top: 10px;
+}
+
+.headerH {
+    color: white;
+    /* Left/Right -> Up/Down -> Blur color */
+    text-shadow: 6px 4px 7px black;
+}
