@@ -1,0 +1,122 @@
+.container,
+.container2,
+.container3 {
+    display: grid;
+    background-color: grey;
+}
+
+.container {
+    grid-template-columns: 20% 100px auto;
+    grid-template-rows: 100px 400px;
+    row-gap: 5px;
+    column-gap: 10px;
+    gap: 5px;
+}
+
+.container2 {
+    grid-template-columns: 20% auto;
+    grid-template-rows: 100px 500px 50px;
+    gap: 5px;
+}
+
+.container > div,
+.container2 > div,
+.container3 > div {
+    background-color: brown;
+    font-size: 40px;
+}
+
+.container2 > div:nth-child(1),
+.container2 > div:nth-child(4) {
+    grid-column: 1 / 3;
+}
+
+@media only screen and (max-width: 380px) {
+    .container2 > div:nth-child(2),
+    .container2 > div:nth-child(3) {
+        grid-column: 1 / 3;
+    }
+
+    .container2 {
+        grid-template-rows: 100px 50px 500px 50px;
+    }
+
+    .container2 > div:nth-child(1) {
+        order: 1;
+    }
+
+    .container2 > div:nth-child(2) {
+        order: 4;
+    }
+
+    .container2 > div:nth-child(3) {
+        order: 3;
+    }
+
+    .container2 > div:nth-child(4) {
+        order: 2;
+    }
+}
+
+    .cont3H {
+        grid-area: header;
+    }
+
+    .cont3S {
+        grid-area: side;
+    }
+
+    .cont3C {
+        grid-area: cont;
+    }
+
+    .cont3F {
+        grid-area: footer;
+    }
+
+    .container3 {
+        gap: 5px;
+        grid-template-areas: 'header header'
+        'side cont'
+        'footer footer';
+        grid-template-columns: 20% auto;
+        grid-template-rows: 100px 500px 50px;
+    }
+
+    @media only screen and (max-width: 380px) {
+
+        .container3 {
+            gap: 5px;
+            grid-template-areas: 
+            'header'
+            'side' 
+            'cont'
+            'footer';
+            grid-template-columns: 100%;
+            grid-template-rows: 100px 50px 500px 50px;
+        }
+        .container2 > div:nth-child(2),
+        .container2 > div:nth-child(3) {
+            grid-column: 1 / 3;
+        }
+    
+        .container2 {
+            grid-template-rows: 100px 50px 500px 50px;
+        }
+
+        .container2 > div:nth-child(1) {
+            order: 1;
+        }
+    
+        .container2 > div:nth-child(2) {
+            order: 4;
+        }
+    
+        .container2 > div:nth-child(3) {
+            order: 3;
+        }
+    
+        .container2 > div:nth-child(4) {
+            order: 2;
+        }
+}
